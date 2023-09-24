@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ventanas emergentes</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<h1>Ventanas emergentes</h1>
+
+	<button onclick="calcular()">Calcular</button>
+
+	<script>
+		function calcular() {
+			let num1 = prompt("Ingrese el primer número:");
+			let num2 = prompt("Ingrese el segundo número:");
+
+			for (let i = 1; i <= 5; i++) {
+				let resultado;
+
+				switch (i) {
+					case 1:
+						resultado = parseFloat(num1) + parseFloat(num2);
+						alert("La suma es: " + resultado);
+						break;
+					case 2:
+						resultado = parseFloat(num1) - parseFloat(num2);
+						alert("La resta es: " + resultado);
+						break;
+					case 3:
+						resultado = parseFloat(num1) * parseFloat(num2);
+						alert("La multiplicación es: " + resultado);
+						break;
+					case 4:
+						resultado = parseFloat(num1) / parseFloat(num2);
+						alert("La división es: " + resultado);
+						break;
+					case 5:
+						resultado = parseFloat(num1) % parseFloat(num2);
+						alert("El porcentaje es: " + resultado);
+						break;
+				}
+			}
+		}
+	</script>
+</body>
+</html>
